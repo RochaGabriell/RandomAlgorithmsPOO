@@ -5,7 +5,7 @@ class Dog():
     
     def sentar(self):
         print(self.nome.title() + " sentar agora")
-
+        
     def rolar(self):
         print(self.nome.title() + " rolar")
     
