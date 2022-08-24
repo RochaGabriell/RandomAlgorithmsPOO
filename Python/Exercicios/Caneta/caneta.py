@@ -4,16 +4,16 @@ class Caneta:
         self.cor = cor
         self.tampada = tampada
 
-    def rabiscar(self):
+    def escrevendo(self):
         if self.tampada is True:
             print("A caneta está tampada.")
         else:
             print("Estou escrevendo")
 
-    def tampar(self):
+    def com_tampa(self):
         self.tampada = True
 
-    def destanpar(self):
+    def sem_tampa(self):
         self.tampada = False
 
     def __str__(self):

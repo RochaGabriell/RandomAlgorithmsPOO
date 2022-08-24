@@ -8,5 +8,5 @@ for i in range(2):
     tampa = False if tampa not in "Ss" else True
 
     chambrada = caneta.Caneta(modelo, cor, tampa)
-    chambrada.rabiscar()
+    chambrada.escrevendo()
     print(chambrada.__str__())
