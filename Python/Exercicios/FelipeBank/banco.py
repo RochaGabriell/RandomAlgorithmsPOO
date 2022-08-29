@@ -22,13 +22,10 @@ class FelipeBank:
         inf = int(input("Informe o nº da conta: "))
 
         # Validar a senha da conta
-        while True:
-            senha = str(input("Senha da conta: "))
-            b = self.validar_senha(inf, senha)
-            if b == True:
-                break
-            else:
-                return print("Senha errada ou conta inexistente!")
+        senha = str(input("Senha da conta: "))
+        b = self.validar_senha(inf, senha)
+        if b == False:
+            return print("Senha errada ou conta inexistente!")
 
         for i in range(len(self.contas_cadastradas)):
             aux = self.contas_cadastradas[i].dados
@@ -40,13 +37,10 @@ class FelipeBank:
         inf = int(input("Informe o nº da conta: "))
         
         # Validar a senha da conta
-        while True:
-            senha = str(input("Senha da conta: "))
-            b = self.validar_senha(inf, senha)
-            if b == True:
-                break
-            else:
-                return print("Senha errada ou conta inexistente!")
+        senha = str(input("Senha da conta: "))
+        b = self.validar_senha(inf, senha)
+        if b == False:
+            return print("Senha errada ou conta inexistente!")
 
         for i in range(len(self.contas_cadastradas)):
             aux = self.contas_cadastradas[i].dados
@@ -95,13 +89,10 @@ class FelipeBank:
         inf = int(input("Informe o nº da conta: "))
 
         # Validar a senha da conta
-        while True:
-            senha = str(input("Senha da conta: "))
-            b = self.validar_senha(inf, senha)
-            if b == True:
-                break
-            else:
-                return print("Senha errada ou conta inexistente!")
+        senha = str(input("Senha da conta: "))
+        b = self.validar_senha(inf, senha)
+        if b == False:
+            return print("Senha errada ou conta inexistente!")
 
         for i in range(len(self.contas_cadastradas)):
             aux = self.contas_cadastradas[i].dados
@@ -109,9 +100,8 @@ class FelipeBank:
                 aux["situacao_conta"] = False
                 return print("Sua conta foi encerrada")
 
-    def __str__(self): # Visualizar o Banco
+    def estado_banco(self):
         print("Estado atual do FelipeBank: ")
-        
         for i in range(len(self.contas_cadastradas)):
             print(json.dumps(self.contas_cadastradas[i].dados, sort_keys=False, indent=4))
         
