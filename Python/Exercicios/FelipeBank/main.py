@@ -22,7 +22,7 @@ def main():
     
     banco.encerrar_conta()
 
-    banco.__str__()
+    banco.estado_banco()
 
 if __name__ == "__main__": # Executar o código apenas se o arquivo foi executado diretamente e não importado
     main()
