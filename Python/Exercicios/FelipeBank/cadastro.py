@@ -1,11 +1,4 @@
 class Cadastro:
-    numero_conta : int
-    abertura_conta : str
-    fechamento_conta : str
-    situacao_conta : bool
-    senha_conta : str
-    saldo_conta : float
-
     def __init__(self, numero_conta : int, abertura_conta : str, fechamento_conta : str, situacao_conta : bool, senha_conta : str, saldo_conta: float):
         #self.numero_conta = numero_conta # int
         #self.abertura_conta = abertura_conta # date
