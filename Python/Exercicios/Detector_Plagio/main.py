@@ -1,6 +1,13 @@
 from originality import Originality
 import os
 
+# Pra que serve
+# tantos códigos?
+# Se a vida
+# não é programada
+# e as melhores coisas
+# não tem lógica
+
 def main(path, path_log):
    try:
       bool_path = os.listdir(path)

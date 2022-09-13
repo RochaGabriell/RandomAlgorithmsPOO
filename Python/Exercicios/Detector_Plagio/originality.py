@@ -1,6 +1,5 @@
 from difflib import SequenceMatcher
 import os
-
 class Originality:
    os.system("clear")
    def __init__(self, path : str, path_log : str):
