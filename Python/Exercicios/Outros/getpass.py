@@ -1,4 +1,3 @@
-# https://github.com/RochaGabriell
 from getpass import getpass
 
 user = input("Username: ")

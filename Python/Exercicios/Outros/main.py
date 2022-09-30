@@ -17,4 +17,3 @@ acao = {1: um, 2: dois, 3: tres} # Informar as confições com a opcão(chava), 
 acao = acao.get(n, outros) # Informa o chave ecistente, se n tiver entra na default
 
 print(acao(n))
-# https://github.com/RochaGabriell
