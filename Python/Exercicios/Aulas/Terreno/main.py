@@ -4,11 +4,11 @@ from terrenos.retangulo import Retangulo
 
 engenheiro = Engenheiro("Gabriel")
 
-quadrado = Quadrado(2)
+#quadrado = Quadrado(2)
 retangulo = Retangulo(2, 4)
 
-engenheiro.calcularPerimetro(quadrado)
+#engenheiro.calcularPerimetro(quadrado)
 engenheiro.calcularPerimetro(retangulo)
 
-engenheiro.calcularArea(quadrado)
+#engenheiro.calcularArea(quadrado)
 engenheiro.calcularArea(retangulo)

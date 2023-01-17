@@ -1,6 +1,6 @@
 from pokemonAbstract import PokemonAbstract
 
-class Pokemon(PokemonAbstract):
+class Pokemon(PokemonAbstract):        
     def restaurarVida(self) -> None:
         self.saude = 10
         print(f"Vida restaurada: {self.saude}")
